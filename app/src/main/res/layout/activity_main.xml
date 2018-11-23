@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boton_Iniciar_Servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BotonIniciar"
+        android:onClick="iniciarServicio"/>
+
+    <Button
+        android:id="@+id/boton_Detener_Servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boton_Iniciar_Servicio"
+        android:text="@string/BotonDetener"
+        android:onClick="detenerServicio"/>
+
+    <Button
+        android:id="@+id/boton_Aleatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boton_Detener_Servicio"
+        android:text="@string/BotonAleatorior"
+        android:onClick="numeroAleatorio"/>
+
+</RelativeLayout>
